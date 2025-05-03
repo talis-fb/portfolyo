@@ -1,12 +1,12 @@
 ---
 
+import { Icon } from "astro-icon/components";
 import I18nKey from "../../i18n/i18nKey";
 import { i18n } from "../../i18n/translation";
 import { getTagList } from "../../utils/content-utils";
 import { url } from "../../utils/url-utils";
 import ButtonTag from "../control/ButtonTag.astro";
 import WidgetLayout from "./WidgetLayout.astro";
-import { Icon } from "astro-icon/components";
 
 const tags = await getTagList();
 
@@ -22,19 +22,17 @@ const className = Astro.props.class;
 const style = Astro.props.style;
 
 const iconMap: Record<string, string | undefined> = {
-    "Rust": "fa6-brands:rust",
-    "C": "fa6-brands:c",
-    "C++": "fa6-brands:c-plus-plus",
-    "C#": "fa6-brands:c-sharp",
-    "Java": "fa6-brands:java",
-    "Python": "fa6-brands:python",
-    "JavaScript": "fa6-brands:js",
-    "TypeScript": "fa6-brands:typescript",
-    "Go": "fa6-brands:golang",
-    "Docker": "fa6-brands:docker",
-}
-
-
+	Rust: "fa6-brands:rust",
+	C: "fa6-brands:c",
+	"C++": "fa6-brands:c-plus-plus",
+	"C#": "fa6-brands:c-sharp",
+	Java: "fa6-brands:java",
+	Python: "fa6-brands:python",
+	JavaScript: "fa6-brands:js",
+	TypeScript: "fa6-brands:typescript",
+	Go: "fa6-brands:golang",
+	Docker: "fa6-brands:docker",
+};
 ---
 <WidgetLayout name={i18n(I18nKey.tags)} id="tags" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT} class={className} style={style}>
     <div class="flex gap-2 flex-wrap">
