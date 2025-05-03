@@ -1,12 +1,11 @@
 ---
-title: Markdown Extended Features
-published: 2024-05-01
-updated: 2024-11-29
-description: 'Read more about Markdown features in Fuwari'
-image: ''
-tags: [Demo, Example, Markdown, Fuwari]
-category: 'Examples'
-draft: false 
+title: Dont Cook It
+published: 2025-01-10
+# updated: 2024-11-29
+description: 'A education game'
+# image: ''
+tags: [GameDev, Godot]
+category: Projects
 ---
 
 ## GitHub Repository Cards

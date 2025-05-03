@@ -1,10 +1,9 @@
 ---
-title: Markdown Example
-published: 2023-10-01
+title: Chip-8 Emulator
+published: 2025-02-16
 description: A simple example of a Markdown blog post.
-tags: [Markdown, Blogging, Demo]
-category: Examples
-draft: false
+tags: [Golang, System, WebAssembly]
+category: Projects
 ---
 
 # An h1 header
