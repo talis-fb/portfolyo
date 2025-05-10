@@ -1,11 +1,10 @@
 ---
 title: Dont Cook It
 published: 2025-01-10
-# updated: 2024-11-29
 description: 'A education game'
-# image: ''
 tags: [GameDev, Godot]
 category: Projects
+draft: true
 ---
 
 ## GitHub Repository Cards

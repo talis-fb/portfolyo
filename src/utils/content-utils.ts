@@ -4,7 +4,8 @@ import { i18n } from "@i18n/translation";
 
 export async function getSortedPosts() {
 	const allBlogPosts = await getCollection("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
+		return !data.draft;
+		// return import.meta.env.PROD ? data.draft !== true : true;
 	});
 
 	const sorted = allBlogPosts.sort((a, b) => {

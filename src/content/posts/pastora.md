@@ -1,9 +1,10 @@
 ---
 title: Pastora
 published: 2025-01-20
-description: ...#
+description: ''
 tags: [Java, Spring, Postgres]
 category: Projects
+draft: true
 ---
 
 Just copy the embed code from YouTube or other platforms, and paste it in the markdown file.
