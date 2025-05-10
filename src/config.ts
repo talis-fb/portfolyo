@@ -46,13 +46,13 @@ export const navBarConfig: NavBarConfig = {
 			external: false,
 		},
 		{
-			name: "Experiences",
-			url: "/experiences/",
+			name: "Projects",
+			url: "/projects/",
 			external: false,
 		},
 		{
-			name: "Projects",
-			url: "/projects/",
+			name: "Timeline",
+			url: "/experiences/",
 			external: false,
 		},
 		// {

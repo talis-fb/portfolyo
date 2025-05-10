@@ -13,7 +13,7 @@ function joinUrl(...parts: string[]): string {
 }
 
 export function getPostUrlBySlug(slug: string): string {
-	return url(`/projects/detail/${slug}/`);
+	return url(`/project/${slug}/`);
 }
 
 export function getCategoryUrl(category: string): string {
