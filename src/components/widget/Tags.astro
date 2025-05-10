@@ -23,21 +23,37 @@ const style = Astro.props.style;
 
 const iconMap: Record<string, string | undefined> = {
 	Rust: "fa6-brands:rust",
-	// C: "fa6-brands:c",
-	"C++": "fa6-brands:c-plus-plus",
-	"C#": "fa6-brands:c-sharp",
-	Java: "fa6-brands:java",
+	Golang: "fa6-brands:golang",
 	Python: "fa6-brands:python",
+	C: "mdi:language-c",
+	"C++": "fa6-brands:c-plus-plus",
+	Java: "fa6-brands:java",
+
+	Spring: "simple-icons:spring",
+	Django: "simple-icons:django",
+
+	Godot: "simple-icons:godotengine",
+
+	'Postgres': "simple-icons:postgresql",
+
+	Docker: "fa6-brands:docker",
+	Kubernetes: "mdi:kubernetes",
+	Ansible: "mdi:ansible",
+
+	NodeJS: "fa6-brands:node-js",
 	JavaScript: "fa6-brands:js",
 	TypeScript: "fa6-brands:typescript",
-	Go: "fa6-brands:golang",
-	Docker: "fa6-brands:docker",
+	Nest: "simple-icons:nestjs",
+
+	React: "mdi:react",
+	Vue: "mdi:vuejs",
+	WebAssembly: "simple-icons:webassembly",
 };
 ---
 <WidgetLayout name={i18n(I18nKey.tags)} id="tags" isCollapsed={false} collapsedHeight={COLLAPSED_HEIGHT} class={className} style={style}>
     <div class="flex gap-2 flex-wrap">
         {tags.map(t => (
-            <ButtonTag href={url(`/archive/tag/${encodeURIComponent(t.name)}/`)} label={`View all posts with the ${t.name} tag`}>
+            <ButtonTag href={url(`/timeline/tag/${encodeURIComponent(t.name)}/`)} label={`View all posts with the ${t.name} tag`}>
                 {iconMap[t.name] && <Icon name={iconMap[t.name]} class="mr-1"></Icon>}
                 {t.name}
             </ButtonTag>
