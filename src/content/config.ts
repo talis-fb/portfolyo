@@ -19,6 +19,7 @@ const postsCollection = defineCollection({
 		nextSlug: z.string().default(""),
 	}),
 });
+
 export const collections = {
 	posts: postsCollection,
 };
