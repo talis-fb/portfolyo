@@ -32,9 +32,7 @@ export type Tag = {
 };
 
 export async function getTagList(): Promise<Tag[]> {
-	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+	const allBlogPosts = await getSortedPosts();
 
 	const countMap: { [key: string]: number } = {};
 	allBlogPosts.map((post: { data: { tags: string[] } }) => {
@@ -58,9 +56,7 @@ export type Category = {
 };
 
 export async function getCategoryList(): Promise<Category[]> {
-	const allBlogPosts = await getCollection<"posts">("posts", ({ data }) => {
-		return import.meta.env.PROD ? data.draft !== true : true;
-	});
+	const allBlogPosts = await getSortedPosts();
 	const count: { [key: string]: number } = {};
 	allBlogPosts.map((post: { data: { category: string | number } }) => {
 		if (!post.data.category) {

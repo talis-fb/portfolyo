@@ -41,18 +41,13 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		{
-			name: "About",
-			url: "/",
-			external: false,
-		},
-		{
 			name: "Projects",
 			url: "/projects/",
 			external: false,
 		},
 		{
 			name: "Timeline",
-			url: "/experiences/",
+			url: "/timeline/",
 			external: false,
 		},
 		// {
