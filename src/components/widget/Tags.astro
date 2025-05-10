@@ -23,7 +23,7 @@ const style = Astro.props.style;
 
 const iconMap: Record<string, string | undefined> = {
 	Rust: "fa6-brands:rust",
-	C: "fa6-brands:c",
+	// C: "fa6-brands:c",
 	"C++": "fa6-brands:c-plus-plus",
 	"C#": "fa6-brands:c-sharp",
 	Java: "fa6-brands:java",
@@ -34,7 +34,7 @@ const iconMap: Record<string, string | undefined> = {
 	Docker: "fa6-brands:docker",
 };
 ---
-<WidgetLayout name={i18n(I18nKey.tags)} id="tags" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT} class={className} style={style}>
+<WidgetLayout name={i18n(I18nKey.tags)} id="tags" isCollapsed={false} collapsedHeight={COLLAPSED_HEIGHT} class={className} style={style}>
     <div class="flex gap-2 flex-wrap">
         {tags.map(t => (
             <ButtonTag href={url(`/archive/tag/${encodeURIComponent(t.name)}/`)} label={`View all posts with the ${t.name} tag`}>
