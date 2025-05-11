@@ -2,7 +2,7 @@
 title: Quack Hub
 description: 'A Linkedin like full-stack social-network'
 published: 2024-07-11
-tags: [NodeJS, Vue, Nest, Postgres, Backend, Frontend, Docker]
+tags: [NodeJS, Vue, Nest, Backend, Frontend, Docker]
 category: Projects
 # draft: true
 image: 'https://github.com/talis-fb/quack-hub/assets/89609312/c1504023-2908-4982-8a77-c42f9815b9e2'
