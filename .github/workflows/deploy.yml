@@ -19,6 +19,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check ENVS
+        run: |
+          echo "FOO=$BAR"
+          echo "UMAMI_ID: ${{ vars.UMAMI_ID }}"
+        env:
+          BAR: ${{ vars.BAR }}
+
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
