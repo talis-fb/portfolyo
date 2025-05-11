@@ -1,6 +1,6 @@
 ---
 title: TReq
-published: 2025-02-16
+published: 2024-04-07
 description: A CLI tool for effortless HTTP requests
 tags: [Rust, Backend]
 category: Projects

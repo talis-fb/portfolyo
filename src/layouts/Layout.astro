@@ -137,6 +137,9 @@ const bannerOffset =
 			offset = offset - offset % 4;
 			document.documentElement.style.setProperty('--banner-height-extend', `${offset}px`);
 		</script>
+
+		{import.meta.env.UMAMI_ID && <script defer src="https://cloud.umami.is/script.js" data-website-id={import.meta.env.UMAMI_ID}></script>}
+
 		<style define:vars={{
 			configHue,
 			'page-width': `${PAGE_WIDTH}rem`,

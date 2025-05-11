@@ -1,6 +1,6 @@
 ---
 title: Ouch
-published: 2025-01-10
+published: 2025-04-10
 description: A open source tool for compression and decompression of files
 tags: [Rust]
 category: Projects
